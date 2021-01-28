@@ -1,3 +1,5 @@
+"""Set up four routes, in which each one returns a simple message"""
+
 from flask import Flask
 
 app = Flask(__name__)
