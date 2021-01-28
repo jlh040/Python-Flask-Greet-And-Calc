@@ -4,9 +4,15 @@ from operations import add, sub, mult, div
 app = Flask(__name__)
 
 @app.route('/add')
-def add():
+def add_nums():
     a = int(request.args['a'])
     b = int(request.args['b'])
-    sum = a + b
+    
+    return str(add(a, b))
 
-    return str(sum)
+@app.route('/sub')
+def subtract_nums():
+    a = int(request.args['a'])
+    b = int(request.args['b'])
+
+    return str(sub(a, b))
