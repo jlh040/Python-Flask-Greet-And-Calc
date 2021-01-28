@@ -16,3 +16,11 @@ def subtract_nums():
     b = int(request.args['b'])
 
     return str(sub(a, b))
+
+@app.route('/mult')
+def multiply_nums():
+    a = int(request.args['a'])
+    b = int(request.args['b'])
+
+    return str(mult(a, b))
+
