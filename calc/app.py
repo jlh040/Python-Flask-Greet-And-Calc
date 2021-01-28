@@ -24,3 +24,9 @@ def multiply_nums():
 
     return str(mult(a, b))
 
+@app.route('/div')
+def divide_nums():
+    a = int(request.args['a'])
+    b = int(request.args['b'])
+
+    return str(div(a, b))
